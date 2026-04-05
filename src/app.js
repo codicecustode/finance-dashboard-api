@@ -1,8 +1,6 @@
 import dotenv from "dotenv";
 
-dotenv.config({
-  path: process.env.NODE_ENV === "test" ? ".env.test" : ".env",
-});
+dotenv.config();
 
 import express from 'express';
 import helmet from 'helmet';
